@@ -11,7 +11,6 @@ def index(request):
     return HttpResponse(template.render(context,request))
 
 def detail(request, question_id):
-    def detail(request, question_id):
     try:
         question = Question.objects.get(pk=question_id)
     except Question.DoesNotExist:
